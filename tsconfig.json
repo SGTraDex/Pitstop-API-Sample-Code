@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "incremental": true,
+        "baseUrl": "./",
+        "target": "es6",
+        "module": "commonjs",
+        "skipLibCheck": true,
+        "declaration": true,
+        "removeComments": true,
+        "outDir": "./build",
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "noImplicitAny": false,
+        "strictPropertyInitialization": false,
+        "strict": true,
+        "resolveJsonModule": true,
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "tsoa": [
+                "node_modules/tsoa/dist/index"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "build"
+    ]
+}
